@@ -15,7 +15,7 @@ dat_long <- gather(dat)
 mod <- lm(value ~ key, data=dat_long)
 
 anova(mod)
-
+aic(mod)
 ##---multiple comparison of means-----
 library("emmeans")
 
